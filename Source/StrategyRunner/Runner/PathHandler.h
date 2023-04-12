@@ -26,6 +26,9 @@ public:
 	UFUNCTION(BlueprintCallable)
 		void SpawnChunk();
 
+	UFUNCTION(BlueprintCallable)
+		void RemoveChunk(AActor* Chunk);
+
 
 protected:
 	UPROPERTY(EditDefaultsOnly, Category = "Chunk|Chunk")

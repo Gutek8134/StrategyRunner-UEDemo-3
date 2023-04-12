@@ -36,3 +36,7 @@ void APathHandler::Tick(float DeltaTime)
 void APathHandler::SpawnChunk() {
 	Chunks.Add(GetWorld()->SpawnActor<AActor>(ChunkClass.Get(), GetActorLocation() + FVector(ChunkSize.X, 0, 0), GetActorRotation()));
 }
+
+void APathHandler::RemoveChunk(AActor* Chunk) {
+	Chunks.Remove(Chunk);
+}
