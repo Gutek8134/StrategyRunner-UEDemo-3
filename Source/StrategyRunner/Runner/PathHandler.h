@@ -34,7 +34,7 @@ protected:
 	UPROPERTY(EditDefaultsOnly, Category = "Chunk|Chunk")
 		TSubclassOf<AActor> ChunkClass;
 
-	UPROPERTY(EditAnywhere, Category = "Chunk|Chunk")
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Chunk|Chunk")
 		FVector ChunkSize = FVector(100, 50, 0);
 
 	UPROPERTY(EditAnywhere, Category = "Chunk|Chunk Movement")
