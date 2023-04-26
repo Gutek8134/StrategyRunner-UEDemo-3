@@ -37,7 +37,7 @@ protected:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Chunk|Chunk")
 		FVector ChunkSize = FVector(100, 50, 0);
 
-	UPROPERTY(EditAnywhere, Category = "Chunk|Chunk Movement")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Chunk|Chunk Movement")
 		FVector Step = FVector(10, 0, 0);
 
 private:
